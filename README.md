@@ -9,30 +9,28 @@ Dataset Source:
 * LSAT Practice: https://github.com/zhongwanjun/AR-LSAT
 
 Necessary packages:
-* curses
-
-The simulator uses match, case keywords, so it requires python 3.10 at least
+* curses (if you are on Windows, this is windows-curses. On MacOS, this should be preinstalled)
 
 Have fun!
 
 ---
-## Help! I want to run the LSAT test but am not familiar with git/the terminal (MacOS/Linux instructions):
+## Help! I want to run the LSAT test, but am not familiar with git/the terminal (MacOS/Linux instructions):
 
 ### Quick Instructions
 Go to detailed instructions below if: this does not work for you/you want to know what this is doing/you are picky about how folders are named/organized on your computer/you are on Linux. 
 
-1. Open your terminal
-2. Run `git clone https://github.com/dxhw/Terminal-Games.git`
-3. Run `echo 'alias lsat="cd ~/Terminal-Games/LSAT_Test && python3 lsat_test.py"' >> ~/.zshrc`
-4. Run `echo 'alias lsat_update="cd ~/Terminal-Games && git pull"' >> ~/.zshrc`
+1. Open your terminal (spotlight search for terminal)
+2. Copy and paste `git clone https://github.com/dxhw/lsat-simulator.git` into the terminal and press enter
+3. Copy and paste `echo 'alias lsat="cd ~/lsat-simulator/LSAT_Test && python3 lsat_test.py"' >> ~/.zshrc` into the terminal and press enter
+4. Copy and paste `echo 'alias lsat_update="cd ~/lsat-simulator && git pull"' >> ~/.zshrc` into the terminal and press enter
 5. Close and reopen the terminal
-6. Done! Run `lsat` to run the game and `lsat_update` to update the game (e.g. if I have told you I updated it or you want to check if I made an update)
+6. Done! Type `lsat` in the terminal and press enter to run the game and `lsat_update` to update the game (check every so often for an update because I may fix a bug, add a feature, etc.)
 
 ### Detailed Instructions
 
 1. Check that python is properly installed on your machine. 
-    * Open your terminal and run `which python3`. You should receive a response like `/Library/Frameworks/Python.framework/Versions/3.10/bin/python3`. Make sure the version number is 3.10 or greater.
-    * If there is no result or the version number is not high enough, you will need to download an update to Python (https://www.python.org/downloads/)
+    * Open your terminal and run `which python3`. You should receive a response like `/Library/Frameworks/Python.framework/Versions/3.10/bin/python3`
+    * If there is no result, you will need to download an update to Python (https://www.python.org/downloads/)
 2. Download this repository to your computer. 
     * Using the terminal, navigate to the directory (folder) that you want to put this responsitory into (use `cd` and the name of the folder e.g. `cd Desktop`). I suggest just putting it in `~`, AKA `/Users/[YOUR_PROFILE_NAME]` or your home directory, so you'll never have to see it. If you just open your terminal without `cd`ing anywhere, you will be in your home directory.
     * Run `git clone https://github.com/dxhw/Terminal-Games.git` This will download the repository as a folder called `Terminal-Games` into your current directory (you could change this if you want by including a folder name after the URL)
