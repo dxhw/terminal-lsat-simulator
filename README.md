@@ -20,13 +20,15 @@ Have fun!
 Go to detailed instructions below if: this does not work for you/you want to know what this is doing/you are picky about how folders are named/organized on your computer/you are on Linux. 
 
 1. Open your terminal (spotlight search for terminal)
-2. Copy and paste `git clone https://github.com/dxhw/lsat-simulator.git` into the terminal and press enter
-3. Copy and paste `echo 'alias lsat="cd ~/lsat-simulator/LSAT_Test && python3 lsat_test.py"' >> ~/.zshrc` into the terminal and press enter
-4. Copy and paste `echo 'alias lsat_update="cd ~/lsat-simulator && git pull"' >> ~/.zshrc` into the terminal and press enter
+2. Copy and paste `git clone https://github.com/dxhw/terminal-lsat-simulator.git` into the terminal and press enter
+3. Copy and paste `echo 'alias lsat="cd ~/terminal-lsat-simulator/LSAT_Test && python3 lsat_test.py"' >> ~/.zshrc` into the terminal and press enter
+4. Copy and paste `echo 'alias lsat_update="cd ~/terminal-lsat-simulator && git pull"' >> ~/.zshrc` into the terminal and press enter
 5. Close and reopen the terminal
 6. Done! Type `lsat` in the terminal and press enter to run the game and `lsat_update` to update the game (check every so often for an update because I may fix a bug, add a feature, etc.)
 
 ### Detailed Instructions
+
+NOTE: These instructions use my Terminal-Games repo instead of this one. This simulator is the same on both of them at the moment, so the difference does not matter. (There are some additional games that are also downloaded along with the simulator.) See: https://github.com/dxhw/Terminal-Games for that full repository. 
 
 1. Check that python is properly installed on your machine. 
     * Open your terminal and run `which python3`. You should receive a response like `/Library/Frameworks/Python.framework/Versions/3.10/bin/python3`
